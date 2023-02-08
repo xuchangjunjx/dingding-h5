@@ -1,4 +1,5 @@
 module.exports = {
+	publicPath: process.env.NODE_ENV === "production" ? "/dingding-h5/" : "/",
 	outputDir: "docs",
 	configureWebpack: {
 		devServer: {
