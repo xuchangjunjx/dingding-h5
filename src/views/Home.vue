@@ -1,28 +1,28 @@
 <template>
 	<div class="home">
 		<van-cell-group title="分组1">
-			<van-cell title="单元格" value="内容" is-link>
+			<van-cell title="单元格" value="1小时前" is-link>
 				<template #title>
 					<span class="custom-title">单元格</span>
-					<van-tag type="danger">标签</van-tag>
+					<van-tag type="warning">逾期</van-tag>
 				</template>
 			</van-cell>
-			<van-cell title="单元格" icon="search" value="内容" is-link>
+			<van-cell title="单元格" value="1小时前" is-link>
 				<template #title>
 					<span class="custom-title">单元格</span>
-					<van-tag type="danger">标签</van-tag>
+					<van-tag type="danger">紧急</van-tag>
 				</template>
-				<template #icon>
-					<van-icon name="star-o" class="my-icon" />
-				</template>
-				<template #right-icon>
-					<van-icon name="search" class="search-icon" />
-				</template>
+				<!-- <template #icon>
+					<van-icon name="star-o"  class="my-icon" />
+				</template> -->
+				<!-- <template #right-icon>
+					<van-icon name="search" class="right-icon my-icon search-icon" />
+				</template> -->
 			</van-cell>
 		</van-cell-group>
 		<van-cell-group title="分组2">
-			<van-cell title="单元格" value="内容" is-link />
-			<van-cell title="单元格" value="内容" is-link />
+			<van-cell title="单元格" value="1小时前" is-link />
+			<van-cell title="单元格" value="1小时前" is-link />
 		</van-cell-group>
 	</div>
 </template>
@@ -122,5 +122,8 @@ export default {
 }
 .my-icon {
 	margin: auto;
+}
+.right-icon {
+	margin-left: 5px;
 }
 </style>
