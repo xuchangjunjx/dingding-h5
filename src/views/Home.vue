@@ -12,12 +12,12 @@
 					<span class="custom-title">单元格</span>
 					<van-tag type="danger">标签</van-tag>
 				</template>
-				<!-- <template #icon>
-					<van-icon name="star-o" />
+				<template #icon>
+					<van-icon name="star-o" class="my-icon" />
 				</template>
 				<template #right-icon>
 					<van-icon name="search" class="search-icon" />
-				</template> -->
+				</template>
 			</van-cell>
 		</van-cell-group>
 		<van-cell-group title="分组2">
@@ -116,5 +116,11 @@ export default {
 <style>
 .content {
 	padding: 16px 16px 160px;
+}
+.custom-title {
+	margin-right: 4px;
+}
+.my-icon {
+	margin: auto;
 }
 </style>
