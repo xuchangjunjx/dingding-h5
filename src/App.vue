@@ -1,8 +1,10 @@
 <template>
 	<div id="app">
 		<van-tabbar v-model="active" route>
-			<van-tabbar-item icon="home-o" replace to="/">Home</van-tabbar-item>
-			<van-tabbar-item icon="search" replace to="/about">About</van-tabbar-item>
+			<van-tabbar-item icon="volume-o" replace to="/">我的待办</van-tabbar-item>
+			<van-tabbar-item icon="todo-list-o" replace to="/about"
+				>我的已办</van-tabbar-item
+			>
 		</van-tabbar>
 		<router-view />
 	</div>
@@ -26,11 +28,17 @@ export default {
 </script>
 
 <style>
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background: #f7f8fa;
+}
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
+	/* text-align: center; */
 	color: #2c3e50;
 }
 

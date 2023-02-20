@@ -8,6 +8,9 @@ const routes = [
 	{
 		path: "/",
 		name: "Home",
+		meta: {
+			title: "审核审批"
+		},
 		component: Home
 	},
 	{
@@ -26,4 +29,8 @@ const router = new VueRouter({
 	routes
 });
 
+router.beforeEach((to, from, next) => {
+	document.title = to.meta.title;
+	next();
+});
 export default router;
