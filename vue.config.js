@@ -20,7 +20,8 @@ module.exports = {
 				"Access-Control-Allow-Origin": "*"
 			},
 			proxy: {
-				...proxy("dingapi", `https://oapi.dingtalk.com`)
+				...proxy("dingapi", `https://oapi.dingtalk.com`),
+				...proxy("dingding", `http://localhost:9999/dingding`)
 			}
 		}
 	}
